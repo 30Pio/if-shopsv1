@@ -28,12 +28,9 @@ end
 -- [ MAIN ] --
 
 local shopItems = Config.Items
-local priceTax = Config.PriceTax or 0
-local enableField = false
 
 local function toggleField(enable)
     SetNuiFocus(enable, enable)
-    enableField = enable
 
     if enable then
         SendNUIMessage({
@@ -107,9 +104,9 @@ CreateThread(function()
         for key, value in pairs(Config.Shops) do
             local dist = #(pCoords - vector3(value.x, value.y, value.z))
             if (dist <= 20.0) then
+                msec = 0
                 DrawMarker(20, vector3(value.x, value.y, value.z + 1), 0.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 1.0, 255, 0, 0, 100, false, true, 2, true, false, false, false)
                 if dist <= 2.0 then
-                    msec = 0
                     ShowHelpNotification(Config.Locale.Interact)
 
                     if IsControlJustReleased(0, 38) then

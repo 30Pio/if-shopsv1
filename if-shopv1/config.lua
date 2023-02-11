@@ -1,17 +1,17 @@
 Config = {}
 
-Config.Framework = 'QB' -- ESX or QB
-Config.FrameworkCore = 'if-core' -- es_extended, qb-core, if-core, ...
+Config.Framework = '' -- ESX or QB
+Config.FrameworkCore = '' -- es_extended, qb-core, if-core, ...
 
 Config.Notification = function(message, type)
-  --  TriggerEvent('esx:showNotification', message, type, 2500)
-    TriggerEvent('QBCore:Notify', message, type, 5000)
+    -- TriggerEvent('esx:showNotification', message, type, 2500)
+    -- TriggerEvent('QBCore:Notify', message, type, 5000)
 end
 
 Config.PayMethod = 'money' -- money/cash, bank
 
 Config.Items = {
-    ['hotdog'] = { -- Item
+    ['water_bottle'] = { -- Item
         category = "category_1", -- Category
         display = "Tomato", -- Display Name
         price = 5, -- Price per unit

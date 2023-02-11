@@ -57,8 +57,8 @@ local function canAfford(source, cb, totalPrice, shoppingCart)
 
 	if (playerBalance and playerBalance >= totalPrice) then
 		for k, v in pairs(shoppingCart) do
-			if (ESX) then FPlayer.addInventoryItem(v.item, v.amount or 1)
-			elseif (QBCore) then FPlayer.Functions.AddItem(v.item, v.amount or 1)
+			if (ESX) then FPlayer.addInventoryItem(k, v.amount or 1)
+			elseif (QBCore) then FPlayer.Functions.AddItem(k, v.amount or 1)
 			end
 		end
 
