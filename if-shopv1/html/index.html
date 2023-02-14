@@ -1,91 +1,114 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-  <!-- Meta setup -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="keywords" content="" />
-  <meta name="decription" content="" />
-  <meta name="author" content="" />
-  <!-- Title -->
-  <title>Banking</title>
-  <link rel="preload" href="fonts/Akrobat-Regular.otf" as="font" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/Akrobat-ExtraBold.otf" as="font" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/PFDinDisplayPro-Regular.woff" as="font" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/PFDinDisplayPro-Bold.woff" as="font" crossorigin="anonymous" />
-  <!-- Fav Icon -->
-  <link rel="icon" href="img/logo.png" />
-  <!-- Main StyleSheet -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- Responsive CSS -->
-  <link rel="stylesheet" href="css/responsive.css" />
-</head>
-
-<body>
-  <!-- page start here -->
-  <main class="main_area">
-    <div class="container_box">
-      <div class="main_row">
-        <div class="main_left">
-          <div class="logo_box">
-            <div class="logo_text">
-              <h3>24/7 SHOP</h3>
-              <span>
-                Amet minim mollit non deserunt ullamco <br />
-                est sit aliqua dolor do amet sint.
-              </span>
-              <img src="img/home.png" alt="images not found" />
-            </div>
-          </div>
-          <div class="cart_item_box">
-            <ul id="shoppingCart_list">
-            </ul>
-            <div class="cart_totat_box">
-              <div class="total_price_box">
-                <span>Total</span>
-                <span class="total_price" data-totalPrice="0">150,000 $</span>
-              </div>
-              <div class="total_price_btns">
-                <button class="pay_btn">PAY</button>
-                <button class="clear_btn">CLEAR</button>
+  <head>
+    <!-- Meta setup -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="" />
+    <meta name="decription" content="" />
+    <meta name="author" content="" />
+    <!-- Title -->
+    <title>IF ShopV1</title>
+    <link rel="preload" href="fonts/Akrobat-Regular.otf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/Akrobat-ExtraBold.otf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/PFDinDisplayPro-Regular.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/PFDinDisplayPro-Bold.woff" as="font" crossorigin="anonymous" />
+    <!-- Fav Icon -->
+    <link rel="icon" href="img/logo.png" />
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body style="height: 100vh">
+    <!-- page start here -->
+    <main class="main_area">
+      <div class="container_box">
+        <div class="main_row">
+          <div class="main_left">
+            <div class="logo_box">
+              <div class="logo_text">
+                <h3>24/7 SHOP</h3>
+                <span>
+                  Amet minim mollit non deserunt ullamco <br />
+                  est sit aliqua dolor do amet sint.
+                </span>
+                <img src="img/home.png" alt="images not found" />
               </div>
             </div>
-            <div class="side_title">
-              <h4>
-                <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M8.96163 19.6535L8.96163 8.34653L2.32494 12.3132C1.82473 12.6097 1.20844 12.3861 0.948342 11.8174C0.688243 11.2437 0.882881 10.5389 1.38322 10.2424L8.96163 5.71667L8.96163 1.55555C8.96163 0.695139 9.60816 -3.83574e-07 10.3227 -4.14809e-07C11.1139 -4.49391e-07 11.6839 0.695138 11.6839 1.55555L20.5481 4.07847C21.7603 4.46736 22.611 5.66805 22.611 7.09722L22.611 20.9465C22.611 22.3319 21.7603 23.5764 20.5481 23.9225L11.6839 26.4444C11.6839 27.3034 11.1139 28 10.3227 28C9.60816 28 8.96163 27.3034 8.96163 26.4444L8.96163 22.2833L1.38322 17.7576C0.882882 17.4611 0.688243 16.7562 0.948343 16.1826C1.20844 15.6139 1.82473 15.3903 2.32494 15.6868L8.96163 19.6535ZM13.7255 18.7104C13.3852 18.7104 13.045 19.0167 13.045 19.4882C13.045 19.8722 13.3852 20.266 13.7255 20.266L17.8089 20.266C18.2214 20.266 18.4894 19.8722 18.4894 19.4882C18.4894 19.0167 18.2214 18.7104 17.8089 18.7104L13.7255 18.7104ZM13.7255 14.8215L17.8089 14.8215C18.2214 14.8215 18.4894 14.4278 18.4894 14.0437C18.4894 13.5722 18.2214 13.2222 17.8089 13.2222L13.7255 13.2222C13.3852 13.2222 13.045 13.5722 13.045 14.0437C13.045 14.4278 13.3852 14.8215 13.7255 14.8215ZM13.7255 7.77778C13.3852 7.77778 13.045 8.12778 13.045 8.55555C13.045 8.98333 13.3852 9.33333 13.7255 9.33333L17.8089 9.33333C18.2214 9.33333 18.4894 8.98333 18.4894 8.55555C18.4894 8.12778 18.2214 7.77778 17.8089 7.77778L13.7255 7.77778Z"
-                    fill="white" />
-                </svg>
-                <span>Shoping Cart</span>
-              </h4>
+            <div class="cart_item_box">
+              <ul id="shoppingCart_list">
+              </ul>
+              <div class="cart_totat_box">
+                <div class="total_price_box">
+                  <span>Total</span>
+                  <span class="total_price" data-totalPrice="0">150,000 $</span>
+                </div>
+                <div class="total_price_btns">
+                  <button class="pay_btn">PAY</button>
+                  <button class="clear_btn">CLEAR</button>
+                </div>
+              </div>
+              <div class="side_title">
+                <h4>
+                  <svg
+                    width="23"
+                    height="28"
+                    viewBox="0 0 23 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.96163 19.6535L8.96163 8.34653L2.32494 12.3132C1.82473 12.6097 1.20844 12.3861 0.948342 11.8174C0.688243 11.2437 0.882881 10.5389 1.38322 10.2424L8.96163 5.71667L8.96163 1.55555C8.96163 0.695139 9.60816 -3.83574e-07 10.3227 -4.14809e-07C11.1139 -4.49391e-07 11.6839 0.695138 11.6839 1.55555L20.5481 4.07847C21.7603 4.46736 22.611 5.66805 22.611 7.09722L22.611 20.9465C22.611 22.3319 21.7603 23.5764 20.5481 23.9225L11.6839 26.4444C11.6839 27.3034 11.1139 28 10.3227 28C9.60816 28 8.96163 27.3034 8.96163 26.4444L8.96163 22.2833L1.38322 17.7576C0.882882 17.4611 0.688243 16.7562 0.948343 16.1826C1.20844 15.6139 1.82473 15.3903 2.32494 15.6868L8.96163 19.6535ZM13.7255 18.7104C13.3852 18.7104 13.045 19.0167 13.045 19.4882C13.045 19.8722 13.3852 20.266 13.7255 20.266L17.8089 20.266C18.2214 20.266 18.4894 19.8722 18.4894 19.4882C18.4894 19.0167 18.2214 18.7104 17.8089 18.7104L13.7255 18.7104ZM13.7255 14.8215L17.8089 14.8215C18.2214 14.8215 18.4894 14.4278 18.4894 14.0437C18.4894 13.5722 18.2214 13.2222 17.8089 13.2222L13.7255 13.2222C13.3852 13.2222 13.045 13.5722 13.045 14.0437C13.045 14.4278 13.3852 14.8215 13.7255 14.8215ZM13.7255 7.77778C13.3852 7.77778 13.045 8.12778 13.045 8.55555C13.045 8.98333 13.3852 9.33333 13.7255 9.33333L17.8089 9.33333C18.2214 9.33333 18.4894 8.98333 18.4894 8.55555C18.4894 8.12778 18.2214 7.77778 17.8089 7.77778L13.7255 7.77778Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span>Shoping Cart</span>
+                </h4>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="main_right">
-          <div class="product_wrapper">
-            <div class="product_btns">
-              <button class="filter-button" data-filter="category_1"><span></span>CATEGORY 1</button>
-              <button class="filter-button" data-filter="category_2"><span></span>CATEGORY 2</button>
-              <button class="filter-button" data-filter="category_3"><span></span>CATEGORY 3</button>
-              <button class="filter-button" data-filter="category_4"><span></span>CATEGORY 4</button>
-              <button class="filter-button" data-filter="category_5"><span></span>CATEGORY 5</button>
-              <button class="filter-button all_filter_button active" data-filter="all"><span></span>ALL</button>
-            </div>
-            <br />
-
-            <div class="product_box">
+          <div class="main_right">
+            <div class="product_wrapper">
+              <div class="product_btns">
+                <button class="filter-button" data-filter="category_1">
+                  <span></span>CATEGORY 1
+                </button>
+                <button class="filter-button" data-filter="category_2">
+                  <span></span>CATEGORY 2
+                </button>
+                <button class="filter-button" data-filter="category_3">
+                  <span></span>CATEGORY 3
+                </button>
+                <button class="filter-button" data-filter="category_4">
+                  <span></span>CATEGORY 4
+                </button>
+                <button class="filter-button" data-filter="category_5">
+                  <span></span>CATEGORY 5
+                </button>
+                <button
+                  class="filter-button all_filter_button active"
+                  data-filter="all"
+                >
+                  <span></span>ALL
+                </button>
+              </div>
+              <br />
+              <div class="product__box-container">
+                <div class="product_box">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <!-- page end here -->
-  <script src="js/jquery-3.6.3.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    </main>
+    <!-- page end here -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
